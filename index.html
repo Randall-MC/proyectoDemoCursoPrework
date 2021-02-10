@@ -3,44 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/favicon.svg" />
     <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    <title>Hola mundo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap"
+    />
+    <title>Platzi Prime</title>
   </head>
   <body>
-    <header>
-      <h1>Platzi Video</h1>
-      <ul>
-        <li><a href="#">Cuenta</a></li>
-        <li><a href="#">Cerrar cesión</a></li>
-      </ul>
+    <header class="header">
+      <img class="header__img" src="img/platzi-video.png" alt="Platzi Video" />
+      <div class="header__perfil">
+        <img class="header__perfil--img" src="img/user-icon.png" alt="User" />
+        <p>Perfil</p>
+        <div class="header__perfil--list">
+          <ul>
+            <li><a href="/">Cuenta</a></li>
+            <li><a href="/">Cerrar cesión</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <section>
-      <main>
-        <h2>Sección principal</h2>
-      </main>
-      <h3>Pseudo Clases</h3>
-      <article class="pseudoClases">
-        <p>😃 Feliz</p>
-        <p>😛 Muy feliz</p>
-        <p>😐 Serio</p>
-        <p>🙃 Misterioso</p>
-        <p>🤔 Pensativo</p>
-      </article>
-      <h3>Pseudo Elemntos</h3>
-      <article class="pseudoElementos">
-        <p>Primero</p>
-        <p>Segundo</p>
-        <p>Tercero</p>
-        <p>Cuarto</p>
-        <p>Quinto</p>
-      </article>
+
+    <section class="seeker">
+      <h2 class="seeker__title">¿Qué quieres ver hoy?</h2>
+      <input type="text" placeholder="Buscar..." class="input" />
     </section>
-    <footer>
-      <ul>
-        <li><a href="#">Contáctanos</a></li>
-        <li><a href="#">Política de privacidad</a></li>
-        <li><a href="#">Términos y condiciones</a></li>
-      </ul>
-    </footer>
   </body>
 </html>

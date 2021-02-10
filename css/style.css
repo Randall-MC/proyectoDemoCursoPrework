@@ -1,34 +1,99 @@
-/* *{
-    padding: 0%;
-    margin: 0%;
-} */
-
-body{
-    font-family: "Helvetica";
-    color: darkslategray;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
 }
 
-a{
-    text-decoration: none;
-    color: burlywood;
+body {
+  background-color: #11698e;
 }
 
-/* Pseudo clases */
-/* p:first-child {
-    color: pink;
-}
-p:last-child {
-    color: brown;
-} */
-.pseudoClases > p:nth-child(2n){
-    color: cadetblue;
-}
-.pseudoClases > p:nth-child(2n + 1){
-    color: chartreuse;
+/* --------------- Header ----------------- */
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
 }
 
-/* Pseudo Elementos */
-.pseudoElementos > p::first-letter{
-    color: darkred;
-    font-size: 20px;
+.header__img {
+  width: 230px;
+  margin-left: 30px;
+}
+
+.header__perfil {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header__perfil--img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.header__perfil p {
+  color: #f8f1f1;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.header__perfil--list {
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+
+.header__perfil--list ul {
+  list-style: none;
+  text-align: right;
+  display: none;
+}
+
+.header__perfil:hover ul {
+  display: block;
+}
+
+.header__perfil--list a {
+  text-decoration: none;
+  color: #f8f1f1;
+}
+
+.header__perfil--list a:hover {
+  color: #ffee93;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* --------------- Seeker ----------------- */
+.seeker {
+  align-items: center;
+  /* border: 5px solid red; */
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+}
+
+.seeker__title {
+  color: #f8f1f1;
+  font-size: 30px;
+}
+
+.input {
+  background-color: #f8f1f120;
+  border-radius: 25px;
+  border: 3px solid #19456b;
+  color: #f8f1f1;
+  font-size: 20px;
+  height: 50px;
+  margin-top: 20px;
+  outline: none;
+  padding-left: 15px;
+  width: 80%;
+}
+
+.input::placeholder {
+  color: #f8f1f160;
 }
