@@ -10,8 +10,8 @@ body {
 
 /* --------------- Header ----------------- */
 .header {
-  width: 100%;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   padding-top: 15px;
 }
@@ -46,9 +46,9 @@ body {
 }
 
 .header__perfil--list ul {
+  display: none;
   list-style: none;
   text-align: right;
-  display: none;
 }
 
 .header__perfil:hover ul {
@@ -68,9 +68,8 @@ body {
 
 /* --------------- Seeker ----------------- */
 .seeker {
-  align-items: center;
-  /* border: 5px solid red; */
   display: flex;
+  align-items: center;
   flex-direction: column;
   height: 300px;
   justify-content: center;
@@ -83,7 +82,7 @@ body {
 
 .input {
   background-color: #f8f1f120;
-  border-radius: 25px;
+  border-radius: 50px;
   border: 3px solid #19456b;
   color: #f8f1f1;
   font-size: 20px;
@@ -91,9 +90,72 @@ body {
   margin-top: 20px;
   outline: none;
   padding-left: 15px;
-  width: 80%;
+  width: 70%;
 }
 
 .input::placeholder {
   color: #f8f1f160;
 }
+
+/* --------------- Carousel ----------------- */
+.carousel {
+  width: 100%;
+  overflow: scroll;
+  padding: 30px;
+  position: relative;
+}
+
+.carousel__container {
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}
+
+.carousel--item {
+  width: 200px;
+  height: 250px;
+  border-radius: 20px;
+  background-color: aqua; /*Borrar despues*/
+  overflow: hidden;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  position: relative;
+}
+
+.carousel--item:hover ~ .carousel--item{
+  transform: translate3d(100px, 0, 0);
+}
+
+.carousel__container:hover .carousel--item {
+  opacity: 0.3;
+}
+
+.carousel__container:hover .carousel--item:hover {
+  transform: scale(1.5);
+  opacity: 1;
+}
+
+.carousel--item__img {
+  width: 200px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.carousel--item__details {
+  background: linear-gradient(to top, #00000000, #00000099);
+  font-size: 10px;
+  opacity: 1;
+  transition: 450ms opacity;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Faltan los titulos y los subtitulos  */
+/* La hacer HOVER debe cambiar la opacidad de 0 a 1 */
