@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+.header {
+  background-color: #21c08b;
+}
+
+.header__img {
+  width: 12em;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.login {
+  background: linear-gradient(#21c08b, #ab88ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1.87em;
+  min-height: calc(100vh - 12.5em);
+}
+
+.login__container {
+  background: #f8f1f120;
+  border: 0.125em solid #f8f1f1;
+  border-radius: 2.5em;
+  color: #f8f1f1;
+  padding: 3.75em 4.25em 2.5em;
+  min-height: 43.75em;
+  width: 18.75em;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  box-shadow: 0 0 0.8em 0.1em #314e52;
+}
+
+.login__container--form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login__container--form label {
+  font-size: 0.875em;
+}
+
+.login__container--remember {
+  color: #f8f1f1;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.625em;
+}
+
+.login__container--remember a {
+  color: #f8f1f1;
+  font-size: 0.875em;
+  text-decoration: none;
+}
+
+.login__container--remember a:hover {
+  text-decoration: underline;
+}
+
+.login__container--social-media > div {
+  display: flex;
+  align-items: center;
+  font-size: 0.875em;
+  margin-bottom: 0.625em;
+}
+
+.login__container--social-media > div > img {
+  width: 1.875em;
+  margin-right: 0.625em;
+}
+
+.login__container--register {
+  font-size: 0.875em;
+}
+
+.login__container--register a {
+  font-size: 1em;
+  color: #f8f1f1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login__container--register a:hover {
+  text-decoration: underline;
+}
+
+.input {
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0.125em solid #f8f1f1;
+  font-size: 1em;
+  margin-bottom: 1.25;
+  padding: 0 1.25em;
+  outline: none;
+  height: 3.125em;
+}
+
+::placeholder {
+  color: #f8f1f1;
+}
+
+.button {
+  background-color: #f8f1f140;
+  border: none;
+  border-radius: 1.5625em;
+  color: #f8f1f1;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  height: 3.125em;
+  letter-spacing: 0.0625;
+  margin: 0.625em 0;
+}
+
+.footer {
+  background-color: #ab88ff;
+  display: flex;
+  align-items: center;
+  height: 6.25em;
+  width: 100%;
+}
+
+.footer a {
+  color: #f8f1f1;
+  cursor: pointer;
+  font-size: 0.875em;
+  padding-left: 1.875em;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
