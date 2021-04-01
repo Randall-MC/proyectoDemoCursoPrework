@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+.header {
+  background-color: #21c08b;
+}
+
+.header__img {
+  width: 12em;
+  margin-top: 1em;
+  margin-left: 2em;
+}
+
+.footer {
+  background-color: #ab88ff;
+  display: flex;
+  align-items: center;
+  height: 6.25em;
+  width: 100%;
+}
+
+.footer a {
+  color: #f8f1f1;
+  cursor: pointer;
+  font-size: 0.875em;
+  padding-left: 1.875em;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  background: linear-gradient(#21c08b, #ab88ff);
+  height: calc(100vh - 11.15em);
+  color: #f8f1f1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container > h1 {
+  font-size: 6em;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+.bounce {
+  animation-name: bounce;
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  20%, 60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(700px);
+  }
+}
+.hinge {
+  margin: 20px;
+  animation-name: hinge;
+}
+
+/*# sourceMappingURL=notFound.css.map */
